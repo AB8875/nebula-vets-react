@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "avanttTRIAL-Normal";
+}
+@font-face {
+  font-family: "avanttTRIAL-Normal";
+  src: url("/assests/avantt-font-family-1737758197-0/AvanttTRIAL-Regular-BF6721a86b1a848.otf");
+}
+.avanttTRIAL-Normal {
+  font-family: "avanttTRIAL-Normal" !important;
+}
+.roboto-mono {
+  font-family: "Roboto Mono", serif !important;
+}
