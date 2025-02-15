@@ -65,7 +65,7 @@ export const AcoIcon = () => {
         x2="30.0332"
         y2="15.9198"
         stroke="url(#paint0_linear_1203_4325)"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
       <line
         x1="15.1465"
@@ -73,7 +73,7 @@ export const AcoIcon = () => {
         x2="15.1465"
         y2="0.806152"
         stroke="url(#paint1_linear_1203_4325)"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
       <defs>
         <linearGradient
@@ -84,8 +84,8 @@ export const AcoIcon = () => {
           y2="17.1697"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA280" />
-          <stop offset="1" stop-color="#8FD9D9" />
+          <stop stopColor="#FFA280" />
+          <stop offset="1" stopColor="#8FD9D9" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1203_4325"
@@ -95,8 +95,8 @@ export const AcoIcon = () => {
           y2="0.806152"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA280" />
-          <stop offset="1" stop-color="#8FD9D9" />
+          <stop stopColor="#FFA280" />
+          <stop offset="1" stopColor="#8FD9D9" />
         </linearGradient>
       </defs>
     </svg>
@@ -169,6 +169,7 @@ export const LinkIcon = () => {
     </svg>
   );
 };
+
 export const InstaIcon = () => {
   return (
     <svg
@@ -196,6 +197,30 @@ export const InstaIcon = () => {
           <stop offset="1" stopColor="#8FD9D9" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+};
+export const ThreeLine = () => {
+  return (
+    <svg
+      width="49"
+      height="27"
+      viewBox="0 0 49 27"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.0338135 22.5562H48.0338V26.1812H0.0338135V22.5562Z"
+        fill="#D8DADC"
+      />
+      <path
+        d="M0.0338135 0.806152H48.0338V4.43115H0.0338135V0.806152Z"
+        fill="#D8DADC"
+      />
+      <path
+        d="M0.0338135 11.6812H48.0338V15.3062H0.0338135V11.6812Z"
+        fill="#D8DADC"
+      />
     </svg>
   );
 };

@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 body {
+  scroll-behavior: smooth;
   font-family: "avanttTRIAL-Normal";
 }
 @font-face {

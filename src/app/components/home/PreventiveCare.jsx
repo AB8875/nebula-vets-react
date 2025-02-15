@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { preLink } from "../helper/Helper";
 
 function PreventiveCare() {
   return (
@@ -19,30 +21,13 @@ function PreventiveCare() {
             Preventive Care
           </h1>
           <ul className="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4">
-            <li>
-              <a
-                href="./animal-health-check.html"
-                className="underline underline-offset-2"
-              >
-                Animal Health Check
-              </a>
-            </li>
-            <li>
-              <a
-                href="./vaccination.html"
-                className="underline underline-offset-2"
-              >
-                Vaccinations
-              </a>
-            </li>
-            <li>
-              <a
-                href="./dental-care.html"
-                className="underline underline-offset-2"
-              >
-                Dental
-              </a>
-            </li>
+            {preLink.map((item, index) => (
+              <li key={index}>
+                <Link href={item.path} className="underline underline-offset-2">
+                  {item.link}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Buttons from "../common/Buttons";
 import Image from "next/image";
 import SubHeading from "../common/SubHeading";
 import Para from "../common/Para";
+import { preCareData } from "../helper/Helper";
 
 function PreCare() {
   return (
@@ -41,64 +42,24 @@ function PreCare() {
           </div>
         </div>
         <div className="bg-[rgba(215,217,221,0.50)] py-[60px] md:py-[80px] ps-8 md:ps-[100px] pe-8 mt-[60px] md:mt-0">
-          <div className="max-w-[672px]">
-            <SubHeading
-              title={"Animal Health Check"}
-              className={
-                "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
-              }
-            />
-            <Para
-              para={
-                "Our practice offers the convenience of same or next-day appointments to ensure your furry companion receives prompt diagnostic evaluation and treatment. Our dedicated team prioritizes swift action, allowing us to quickly identify the issue at hand and provide the necessary care your pet requires."
-              }
-              className={"mt-6"}
-            />
+          {preCareData.map((item, index) => (
+            <div key={index} className="max-w-[672px] mb-8">
+              <div>
+                <SubHeading
+                  title={item.title}
+                  className={
+                    "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
+                  }
+                />
+                <Para para={item.para} className={"mt-6"} />
 
-            <div className="mt-10 group">
-              <Buttons path={"/animal-health"} button={"LEARN MORE"} />
+                <div className="mt-10 group">
+                  <Buttons path={item.path} button={item.button} />
+                </div>
+                <div className="bg-black h-[1px] mt-11 md:mt-15 max-w-[633px]"></div>
+              </div>
             </div>
-            <div className="bg-black h-[1px] mt-11 md:mt-15 max-w-[633px]"></div>
-          </div>
-
-          <div className="max-w-[672px] mt-8">
-            <SubHeading
-              title={"Vaccinations"}
-              className={
-                "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
-              }
-            />
-            <Para
-              para={
-                "Vaccinations are a key component of your pet’s health and essential to prevent life-threatening diseases. Nebula vets offer's all the core and non-core vaccines your pet might need."
-              }
-              className={"mt-6"}
-            />
-
-            <div className="mt-10 group">
-              <Buttons path={"/vaccination"} button={"LEARN MORE"} />
-            </div>
-            <div className="bg-black h-[1px] mt-11 md:mt-15 max-w-[633px]"></div>
-          </div>
-
-          <div className="max-w-[672px] mt-8">
-            <SubHeading
-              title={"Dental"}
-              className={
-                "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
-              }
-            />
-            <Para
-              para={
-                "Dental disease and smelly breath is common, and regular cleanings and exams can save your pet a lot of pain and disease later in life. Our advanced state-of-the-art dental suite is equipped for dental cleanings (scale and polish), extractions and any other care your pet may need."
-              }
-              className={"mt-6"}
-            />
-            <div className="mt-10 group">
-              <Buttons button={"LEARN MORE"} path={"/dental-care"} />
-            </div>
-            <div className="bg-black h-[1px] mt-11 md:mt-15 max-w-[633px]"></div>
-          </div>
+          ))}
         </div>
       </div>
     </>

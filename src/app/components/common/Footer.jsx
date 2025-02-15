@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FbIcon, InstaIcon, LinkIcon } from "../helper/Icon";
+import {
+  companyLink,
+  contactLink,
+  footerSvg,
+  servicesLink,
+} from "../helper/Helper";
 
 function Footer() {
   return (
@@ -19,107 +25,68 @@ function Footer() {
                 className="border-2 bg-transparent placeholder-[#D7D9DD] ps-3 py-2 placeholder:text-sm sm:placeholder:text-lg w-full max-w-[300px] mt-6"
               />
               <div className="flex items-center gap-x-5 mt-6">
-                <span className="group transition-all ease-in duration-300">
-                  <Link href="https://www.facebook.com/login/" target="_blank">
-                    <FbIcon />
-                  </Link>
-                </span>
-                <span className="group transition-all ease-in duration-300">
-                  <Link
-                    href="https://www.linkedin.com/login/in"
-                    target="_blank"
+                {footerSvg.map((item, index) => (
+                  <div
+                    key={index}
+                    className="group transition-all ease-in duration-300"
                   >
-                    <LinkIcon />
-                  </Link>
-                </span>
-                <span className="group transition-all ease-in duration-300">
-                  <Link href="https://www.instagram.com/" target="_blank">
-                    <InstaIcon />
-                  </Link>
-                </span>
+                    <Link href={item.path} target="_blank">
+                      {item.icon}
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
 
             <div className="max-[520px]:w-full">
               <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%]">
+                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
                   Services
                 </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="./veterinary-services.html#preventive"
-                    className="avanttTRIAL-Normal"
+                {servicesLink.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    Preventive Care
-                  </Link>
-                </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="./veterinary-services.html#sick"
-                    className="avanttTRIAL-Normal"
-                  >
-                    Sick Patient Care
-                  </Link>
-                </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="./veterinary-services.html#surgery"
-                    className="avanttTRIAL-Normal"
-                  >
-                    Surgery
-                  </Link>
-                </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="./veterinary-services.html#additional"
-                    className="avanttTRIAL-Normal"
-                  >
-                    Additional Services
-                  </Link>
-                </li>
+                    <Link href={item.path} className="avanttTRIAL-Normal">
+                      {item.link}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="max-[520px]:w-full">
               <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%]">
+                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
                   Company
                 </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="./about-nebula-vets.html"
-                    className="avanttTRIAL-Normal"
+                {companyLink.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    About us
-                  </Link>
-                </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link href="./join-team.html" className="avanttTRIAL-Normal">
-                    Carreers
-                  </Link>
-                </li>
+                    <Link href={item.path} className="avanttTRIAL-Normal">
+                      {item.link}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="max-[520px]:w-full">
               <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%]">
+                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
                   Contact Us
                 </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-3 sm:mt-7 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="tel: +1(212) 123-4567"
-                    className="avanttTRIAL-Normal"
+                {contactLink.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
                   >
-                    Phone: (212) 123-4567
-                  </Link>
-                </li>
-                <li className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in">
-                  <Link
-                    href="mailto: hello@nebulavets.com"
-                    className="avanttTRIAL-Normal"
-                  >
-                    hello@nebulavets.com
-                  </Link>
-                </li>
+                    <Link href={item.path} className="avanttTRIAL-Normal">
+                      {item.link}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

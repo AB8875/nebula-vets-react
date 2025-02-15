@@ -13,7 +13,7 @@ function Hero() {
               <div className="absolute !top-[18%] sm:!top-[37%] 2xl:!left-[21%] sm:!left-[5%]">
                 <Heading
                   title={"Welcome to Nebula Vets"}
-                  className={"max-w-[250px] sm:max-w-[511px]"}
+                  className={"max-w-[250px] sm:!max-w-[511px]"}
                 />
                 <p className="text-[#494336] sm:text-[#D7D9DD] roboto-mono text-base sm:text-xl md:text-[22px] lg:text-[28px] mt-5">
                   Reinventing Pet Medicine

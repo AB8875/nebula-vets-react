@@ -1,12 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Accordion from "./Accordion";
-import Aco2 from "./Aco2";
-import Aco3 from "./Aco3";
-import Aco4 from "./Aco4";
-import Aco5 from "./Aco5";
-import Aco6 from "./Aco6";
-import Aco7 from "./Aco7";
+import SubHeading from "../common/SubHeading";
+import { AcoIcon } from "../helper/Icon";
+import Para from "../common/Para";
+import { animalAco } from "../helper/Helper";
 
 function CheckMatter() {
   return (
@@ -19,13 +16,23 @@ function CheckMatter() {
             </h1>
             <div>
               <div className="flex flex-col gap-y-8 w-full mt-10">
-                <Accordion />
-                <Aco2 />
-                <Aco3 />
-                <Aco4 />
-                <Aco5 />
-                <Aco6 />
-                <Aco7 />
+                {animalAco.map((item, index) => (
+                  <div key={index} className="w-full">
+                    <div className="flex items-center justify-between">
+                      <SubHeading
+                        title={item.title}
+                        className={
+                          "roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%]"
+                        }
+                      />
+                      <span>
+                        <AcoIcon />
+                      </span>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"></div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

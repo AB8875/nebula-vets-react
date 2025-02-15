@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { surgLink } from "../helper/Helper";
 
 function Surgery() {
   return (
@@ -19,16 +21,13 @@ function Surgery() {
             Surgery
           </h1>
           <ul className="*:text-[#D7D9DD] *:text-sm md:*:text-lg *:leading-[144%] flex flex-col gap-y-[6px] mt-4">
-            <li>
-              <a href="./surgery.html" className="underline underline-offset-2">
-                Surgeries
-              </a>
-            </li>
-            <li>
-              <a href="./spay.html" className="underline underline-offset-2">
-                Spay & Neuter
-              </a>
-            </li>
+            {surgLink.map((item, index) => (
+              <li key={index}>
+                <Link href={item.path} className="underline underline-offset-2">
+                  {item.link}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>{" "}
