@@ -362,3 +362,72 @@ export const SnapList2 = [
     heading2: "Quickly assess cats with cardiac risk factors",
   },
 ];
+
+export const listEC = [
+  {
+    list: "Open wounds",
+  },
+  {
+    list: "Toxin ingestion or foreign body",
+  },
+  {
+    list: "Signs of pain",
+  },
+  {
+    list: "Behavioral changes",
+  },
+  {
+    list: "Eye issues",
+  },
+  {
+    list: "Ear infections",
+  },
+  {
+    list: "Vomiting or diarrhea",
+  },
+  {
+    list: "Hair loss",
+  },
+  {
+    list: "Coughing, sneezing or nasal discharge",
+  },
+  {
+    list: "Urinating blood or urinary changes",
+  },
+  {
+    list: "Worms, fleas, ticks or mites",
+  },
+  {
+    list: "Scooting",
+  },
+  {
+    list: "Changes in eating or drinking",
+  },
+];
+
+export const ecAco = [
+  {
+    heading: "Immediate Access to Care",
+  },
+  {
+    heading: "Skilled Veterinary Team",
+  },
+  {
+    heading: "State-of-the-Art Facilities",
+  },
+  {
+    heading: "Compassionate and Calm Approach",
+  },
+  {
+    heading: "Comprehensive Emergency Services",
+  },
+  {
+    heading: "Collaborative Care",
+  },
+  {
+    heading: "Seamless Referrals",
+  },
+  {
+    heading: "Emergency Preparedness",
+  },
+];

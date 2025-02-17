@@ -4,14 +4,14 @@ import Image from "next/image";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
 
-function Hero() {
+function Hero({ title }) {
   return (
     <>
       <div className="relative overflow-hidden bg-[#494336]">
         <div className="max-w-[1440px] mx-auto px-4 md:px-7 lg:px-10 xl:px-12 pt-[120px]">
           <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-[5px] lg:mt-[50px] xl:mt-[80px] pb-10 md:pb-20">
             <div className="pe-0 lg:ms-[-50px] md:pb-0 pt-[230px] lg:pt-0">
-              <Heading title={"Diagnostics"} />
+              <Heading title={title} />
               <Para
                 para={
                   "At Nebula Vets, we are committed to providing comprehensive and advanced diagnostic testing to ensure the well-being of your cherished pet. Our state-of-the-art veterinary hospital offers a range of diagnostic tests that empower us to gain precise insights into your pet's health. Here are some of the key diagnostic tests available at Nebula Vets for the benefit of our clients and their beloved pets:"
