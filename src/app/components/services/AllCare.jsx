@@ -8,7 +8,7 @@ import AddCare from "./AddCare";
 function AllCare() {
   return (
     <>
-      <div class="md:ps-7 lg:ps-10 xl:ps-12">
+      <div className="md:ps-7 lg:ps-10 xl:ps-12">
         <PreCare />
         <SiCare />
         <SurCare />

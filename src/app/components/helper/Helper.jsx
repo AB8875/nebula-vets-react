@@ -181,13 +181,13 @@ export const sickData = [
     title: "Telemedicine consults",
     para: "Nebula vets offers a fast telemedicine service, to help your pet without leaving the home",
     button: "LEARN MORE",
-    path: "/",
+    path: "/telemedicine",
   },
   {
     title: "Diagnostics",
     para: "Nebula vets has invested in the latest technology, equipped for all the diagnostic tests your pet needs to stay healthy, and to treat those that get sick. We’re able to run tests quickly in-house in situations where a rapid diagnosis is required and offer artificialintelligence alongside veterinary experts.",
     button: "LEARN MORE",
-    path: "/",
+    path: "/daignostics",
   },
   {
     title: "Pharmacy",
@@ -242,5 +242,123 @@ export const addData = [
     para: "The decision to say goodbye to your pet is the most difficult decision you’ll have to make. Our team at nebula vets is here to guide you through the process with compassion and can perform end-of-life services at the time of your choosing.",
     button: "LEARN MORE",
     path: "/",
+  },
+];
+
+export const fourData = [
+  {
+    heading: "1.",
+    subheading: "Book a telemedicine consult",
+    para: "Click `the chat with vet` button below to join a que for a telemedicine online visit.",
+  },
+  {
+    heading: "2.",
+    subheading: "Join with the link",
+    para: "A custom link will be sent to your email",
+  },
+  {
+    heading: "3.",
+    subheading: "Video chat",
+    para: "In a real-time online visit, share with the vet your pet’s current issues.",
+  },
+  {
+    heading: "4.",
+    subheading: "Treatment",
+    para: "Our veterinarian will evaluate your pet and discuss next steps, which may include medication.",
+  },
+];
+
+export const testList = [
+  {
+    list: "Hematology",
+  },
+  {
+    list: "Serum Chemistries",
+  },
+  {
+    list: "Urinalysis",
+  },
+  {
+    list: "Cytology",
+  },
+  {
+    list: "Fecal analysis",
+  },
+  {
+    list: "Blood disorders",
+  },
+];
+
+export const acoDaigno = [
+  {
+    heading: "Blood Panel",
+  },
+  {
+    heading: "Urinalysis",
+  },
+  {
+    heading: "Fecal Testing",
+  },
+  {
+    heading: "Cytology",
+  },
+  {
+    heading: "Histopathology",
+  },
+  {
+    heading: "Tick & Heart-worm Testing",
+  },
+  {
+    heading: "Allergy Testing",
+  },
+];
+
+export const acoDaigno2 = [
+  {
+    heading: "Digital Radiography",
+  },
+  {
+    heading: "Ultrasound",
+  },
+  {
+    heading: "Echocardiograms",
+  },
+];
+
+export const SnapList = [
+  {
+    heading1: "SNAP Lepto Test",
+    heading2: "Add description",
+  },
+  {
+    heading1: "SNAP Lepto Test",
+    heading2: "Add description",
+  },
+  {
+    heading1: "SNAP Lepto Test",
+    heading2: "Add description",
+  },
+  {
+    heading1: "SNAP Lepto Test",
+    heading2: "Add description",
+  },
+];
+
+export const SnapList2 = [
+  {
+    heading1: "SNAP FIV/FeLV Combo Test",
+    heading2: "Add description",
+  },
+  {
+    heading1: "SNAP fPL Test",
+    heading2: "Assess feline pancreatic health",
+  },
+  {
+    heading1: "Assess feline pancreatic health",
+    heading2: "Add description",
+  },
+  {
+    heading1: "SNAP Feline proBNP Test",
+    heading2: "Quickly assess cats with cardiac risk factors",
   },
 ];
