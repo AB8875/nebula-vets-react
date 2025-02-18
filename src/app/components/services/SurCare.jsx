@@ -4,6 +4,7 @@ import Buttons from "../common/Buttons";
 import SubHeading from "../common/SubHeading";
 import Para from "../common/Para";
 import { surData } from "../helper/Helper";
+import SubPara from "./SubPara";
 
 function SurCare() {
   return (
@@ -45,19 +46,13 @@ function SurCare() {
         </div>
         <div className="bg-[rgba(215,217,221,0.50)] pt-[60px] pb-[80px] md:pt-[80px] md:pb-[150px] ps-8 md:ps-[100px] pe-8 mt-[60px] md:mt-0">
           {surData.map((item, index) => (
-            <div key={index} className="max-w-[672px] mb-8">
-              <SubHeading
-                title={item.title}
-                className={
-                  "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
-                }
-              />
-              <Para para={item.para} className={"mt-6"} />
-              <div className="mt-10 group">
-                <Buttons path={item.path} button={item.button} />
-              </div>
-              <div className="bg-black h-[1px] mt-[60px] max-w-[633px]"></div>
-            </div>
+            <SubPara
+              key={index}
+              title={item.title}
+              para={item.para}
+              path={item.path}
+              button={item.button}
+            />
           ))}
         </div>
       </div>

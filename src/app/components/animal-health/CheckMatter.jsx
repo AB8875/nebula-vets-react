@@ -1,10 +1,6 @@
-import Image from "next/image";
 import React from "react";
-import SubHeading from "../common/SubHeading";
-import { AcoIcon } from "../helper/Icon";
-import Para from "../common/Para";
 import { animalAco } from "../helper/Helper";
-
+import AcoProps2 from "../common/AcoProps2";
 function CheckMatter() {
   return (
     <>
@@ -17,21 +13,7 @@ function CheckMatter() {
             <div>
               <div className="flex flex-col gap-y-8 w-full mt-10">
                 {animalAco.map((item, index) => (
-                  <div key={index} className="w-full">
-                    <div className="flex items-center justify-between">
-                      <SubHeading
-                        title={item.title}
-                        className={
-                          "roboto-mono text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%]"
-                        }
-                      />
-                      <span>
-                        <AcoIcon />
-                      </span>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-[#FFA280] from-0% to-[#8FD9CB] to-100% h-[2px] mt-6"></div>
-                  </div>
+                  <AcoProps2 key={index} title={item.title} />
                 ))}
               </div>
             </div>

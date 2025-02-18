@@ -4,6 +4,7 @@ import Image from "next/image";
 import SubHeading from "../common/SubHeading";
 import Para from "../common/Para";
 import { sickData } from "../helper/Helper";
+import SubPara from "./SubPara";
 
 function SiCare() {
   return (
@@ -44,20 +45,13 @@ function SiCare() {
         </div>
         <div className="bg-[rgba(215,217,221,0.50)] py-[60px] md:py-[80px] ps-8 md:ps-[100px] pe-8 mt-[60px] md:mt-0">
           {sickData.map((item, index) => (
-            <div key={index} className="max-w-[672px] mb-8">
-              <SubHeading
-                title={item.title}
-                className={
-                  "roboto-mono !text-base sm:!text-[20px] md:!text-[28px]"
-                }
-              />
-              <Para para={item.para} className={"  mt-6"} />
-
-              <div className="mt-10 group">
-                <Buttons path={item.path} button={item.button} />
-              </div>
-              <div className="bg-black h-[1px] mt-[60px] max-w-[633px]"></div>
-            </div>
+            <SubPara
+              key={index}
+              title={item.title}
+              para={item.para}
+              button={item.button}
+              path={item.path}
+            />
           ))}
         </div>
       </div>{" "}

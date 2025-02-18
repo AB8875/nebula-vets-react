@@ -1,8 +1,6 @@
-import Image from "next/image";
 import React from "react";
-import { AcoIcon } from "../helper/Icon";
 import { qusAns, qusAns2 } from "../helper/Helper";
-import AcoProps from "./AcoProps";
+import AcoProps from "../common/AcoProps";
 
 function AccordionHome() {
   return (

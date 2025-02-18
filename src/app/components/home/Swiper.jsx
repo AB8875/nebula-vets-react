@@ -1,9 +1,8 @@
-import Image from "next/image";
 import React from "react";
-import PreventiveCare from "../home/PreventiveCare";
-import SickCare from "../home/ SickCare";
-import Surgery from "../home/Surgery";
-import Additional from "../home/Additional";
+import PreventiveCare from "./PreventiveCare";
+import SickCare from "./ SickCare";
+import Surgery from "./Surgery";
+import Additional from "./Additional";
 
 function Swiper() {
   return (

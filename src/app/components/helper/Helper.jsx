@@ -75,11 +75,11 @@ export const qusAns2 = [
 
 export const animalAco = [
   { title: "Early Detection and Prevention" },
-  { title: "Early Detection and Prevention" },
-  { title: "Early Detection and Prevention" },
-  { title: "Early Detection and Prevention" },
-  { title: "Early Detection and Prevention" },
-  { title: "Early Detection and Prevention" },
+  { title: "Tailored Care for Different Life Stages" },
+  { title: "Comprehensive Physical Examinations" },
+  { title: "Vaccinations and Preventive Care" },
+  { title: "Diagnostic Screenings" },
+  { title: "Nutritional and Behavioral Guidance" },
 ];
 
 export const vacAco = [
@@ -112,6 +112,21 @@ export const mypetData = [
   {
     title: "Why should I vaccinate my pet?",
     para: "Vaccines are affective as the expose your pet’s immune system to an inactive strain of infectious agents. This assists their body to create immune cells that are specifically designed to respond effectively when exposed to the disease. Vaccines are also relatively painless, quick and cost-effective to administer.",
+  },
+];
+
+export const dentalScale = [
+  {
+    title: "Dentals - Scale & Polish",
+    para: "Dental health is a vital aspect of your pet's overall well-being. Just like humans, pets can experience dental problems, including plaque buildup, gum disease, and tooth decay. At Nebula Vets, we prioritize dental care and offer comprehensive dental services to ensure your pet's oral health remains in top condition.",
+  },
+  {
+    title: "When to schedule a dental consultation",
+    para: "If you notice any signs of dental problems in your pet, such as bad breath, red or swollen gums, difficulty eating, or loose teeth, it's essential to seek professional dental care. Schedule a dental consultation at Nebula Vets to have our skilled team assess your pet's dental health and recommend the most appropriate treatment options.",
+  },
+  {
+    title: "Post Dental Care",
+    para: "Most pets recover quickly after a dental. A little tiredness, and some post-anesthesia anxiety is normal. You can feed your pet the evening of their procedure; soft food for 14 days is recommended if any dental extractions were performed. If your pet had any extractions performed, we will send them home with pain relief to keep them comfortable.",
   },
 ];
 

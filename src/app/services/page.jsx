@@ -1,11 +1,10 @@
 import React from "react";
 
-import Navbar from "../components/common/Navbar";
-import Hero from "../components/services/Hero";
 import Swiper from "../components/services/Swiper";
 import FourHeading from "../components/services/FourHeading";
 import AllCare from "../components/services/AllCare";
-import Footer from "../components/common/Footer";
+
+import Hero from "../components/services/Hero";
 
 function page() {
   return (

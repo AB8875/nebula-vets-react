@@ -10,7 +10,7 @@ import PreFooter3 from "../components/common/PreFooter3";
 function page() {
   return (
     <>
-      <Hero title={"abcd"} />
+      <Hero />
 
       <AvailTest />
 
