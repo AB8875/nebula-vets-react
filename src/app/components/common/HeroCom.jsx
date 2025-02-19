@@ -17,8 +17,9 @@ function HeroCom({
   imgclass,
   imgclass2,
   paraclass,
-  alt,
   headclass,
+  alt1,
+  alt2,
 }) {
   return (
     <>
@@ -42,6 +43,7 @@ function HeroCom({
                 src={img1}
                 width={imgW}
                 height={imgH}
+                alt={alt1}
               />
               <div>
                 <Image
@@ -49,6 +51,7 @@ function HeroCom({
                   src={img2}
                   width={imgW2}
                   height={imgH2}
+                  alt={alt2}
                 />
               </div>
             </div>

@@ -17,10 +17,11 @@ function Hero() {
         img1={"/assests/png/hero-telemedi.png"}
         imgW={600}
         imgH={500}
+        alt1={"Telemedicine"}
         img2={"/assests/png/hero-telemedi.png"}
         imgW2={400}
         imgH2={300}
-        alt={"Telemedicine"}
+        alt2={"Telemedicine"}
       />
     </>
   );

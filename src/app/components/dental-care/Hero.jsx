@@ -14,10 +14,11 @@ function Hero() {
         img1={"/assests/png/dental-hero.png"}
         imgW={500}
         imgH={414}
+        alt1={"Dental-Care"}
         img2={"/assests/png/dental-hero.png"}
         imgW2={400}
         imgH2={250}
-        alt={"Dental-Care"}
+        alt2={"Dental-Care"}
       />
     </>
   );

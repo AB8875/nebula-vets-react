@@ -208,7 +208,7 @@ export const sickData = [
     title: "Pharmacy",
     para: "Our highly stocked on-site pharmacy inlcudes a variety of prescription medications and pet health products for your pet. If a particular medication is unavailable, our compounding pharmacy can have it delivered to you within 24 hours.",
     button: "LEARN MORE",
-    path: "/",
+    path: "/pharmacy",
   },
 ];
 
@@ -444,5 +444,56 @@ export const ecAco = [
   },
   {
     heading: "Emergency Preparedness",
+  },
+];
+
+export const pharmaData = [
+  {
+    qustion: "Convenience",
+  },
+  {
+    qustion: "Quality Assurance",
+  },
+  {
+    qustion: "Prescription Medications",
+  },
+  {
+    qustion: "Prescription Diets",
+  },
+  {
+    qustion: "Wellness and Preventive Products",
+  },
+  {
+    qustion: "Expert Guidanceience",
+  },
+  {
+    qustion: "Prescription Refills",
+  },
+];
+
+export const animalData = [
+  {
+    list: "-Vaccinations",
+  },
+  {
+    list: "-Blood panels",
+  },
+  {
+    list: "-Parasitic prevention",
+  },
+  {
+    list: "-Microchipping",
+  },
+  {
+    list: "-Dental care",
+  },
+  {
+    list: "-Fecal tests",
+  },
+  {
+    list: "-Skin tests",
+  },
+  {
+    list: "-Dietary advise",
   },
 ];

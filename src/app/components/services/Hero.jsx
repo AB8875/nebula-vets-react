@@ -13,9 +13,11 @@ function Hero() {
         img1={"/assests/png/dog-cat-2.png"}
         imgW={527}
         imgH={500}
+        alt1={"Veterinaty-Services"}
         img2={"/assests/png/dog-cat-2.png"}
         imgW2={400}
         imgH2={350}
+        alt2={"Veterinaty-Services"}
         imgclass2={"!max-w-[220px]"}
         mainclass={"flex-col-reverse"}
       />

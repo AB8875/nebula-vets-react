@@ -17,7 +17,7 @@ function OurService() {
               className={"mt-7"}
             />
             <div className="mt-10 ">
-              <Buttons path={"/"} button={"BOOK NOW"} />
+              <Buttons path={"/services"} button={"BOOK NOW"} />
             </div>
           </div>
         </div>

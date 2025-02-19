@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import SubHeading from "../common/SubHeading";
 import Para from "../common/Para";
+import { animalData } from "../helper/Helper";
 
 function CheckExam() {
   return (
@@ -24,14 +25,11 @@ function CheckExam() {
                 className={"mt-5"}
               />
               <ul className="*:text-[#494336] *:text-sm *:sm:text-base *:md:text-lg *:lg:text-xl">
-                <li className="avanttTRIAL-Normal">-vaccinations</li>
-                <li className="avanttTRIAL-Normal">-Blood panels</li>
-                <li className="avanttTRIAL-Normal">-Parastic Prevention</li>
-                <li className="avanttTRIAL-Normal">-Microchiping</li>
-                <li className="avanttTRIAL-Normal">-Dental Care</li>
-                <li className="avanttTRIAL-Normal">-Fecal tests</li>
-                <li className="avanttTRIAL-Normal">-Skin tests</li>
-                <li className="avanttTRIAL-Normal">-Dietry advise</li>
+                {animalData.map((item, index) => (
+                  <li key={index} className="avanttTRIAL-Normal">
+                    {item.list}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
