@@ -5,6 +5,7 @@ import { FbIcon, InstaIcon, LinkIcon } from "../helper/Icon";
 import {
   companyLink,
   contactLink,
+  footerData,
   footerSvg,
   servicesLink,
 } from "../helper/Helper";
@@ -38,57 +39,25 @@ function Footer() {
               </div>
             </div>
 
-            <div className="max-[520px]:w-full">
-              <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
-                  Services
-                </li>
-                {servicesLink.map((item, index) => (
-                  <li
-                    key={index}
-                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                  >
-                    <Link href={item.path} className="avanttTRIAL-Normal">
-                      {item.link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="max-[520px]:w-full">
-              <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
-                  Company
-                </li>
-                {companyLink.map((item, index) => (
-                  <li
-                    key={index}
-                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                  >
-                    <Link href={item.path} className="avanttTRIAL-Normal">
-                      {item.link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="max-[520px]:w-full">
-              <ul className="text-[#D7D9DD]">
-                <li className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7">
-                  Contact Us
-                </li>
-                {contactLink.map((item, index) => (
-                  <li
-                    key={index}
-                    className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
-                  >
-                    <Link href={item.path} className="avanttTRIAL-Normal">
-                      {item.link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {footerData.map((item, index) => (
+              <div key={index}>
+                <h4 className="roboto-mono text-base sm:text-2xl leading-[150%] mb-3 sm:mb-7 text-[#D7D9DD]">
+                  {item.title}
+                </h4>
+                <ul className="text-[#D7D9DD]">
+                  {item.subdata.map((items, i) => (
+                    <li
+                      key={i}
+                      className="text-sm sm:text-lg leading-[144%] underline underline-offset-2 mt-2 hover:bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] hover:bg-clip-text hover:text-transparent transtion-all duration-300 ease-in"
+                    >
+                      <Link href={items.path} className="avanttTRIAL-Normal">
+                        {items.link}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>

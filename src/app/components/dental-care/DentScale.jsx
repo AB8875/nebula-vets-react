@@ -1,10 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import SubHeading from "../common/SubHeading";
-import Para from "../common/Para";
 import { dentalScale } from "../helper/Helper";
 import SecSection from "../common/SecSection";
-
 function DentScale() {
   return (
     <>

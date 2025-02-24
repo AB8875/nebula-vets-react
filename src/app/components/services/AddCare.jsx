@@ -17,7 +17,7 @@ function AddCare() {
           <div className="-mb-12 md:mb-0 max-w-[240px] sm:max-w-[370px]">
             <Image
               className="w-full"
-              src={"/assests/png/additonal-veternary.png"}
+              src={""}
               width={370}
               height={309}
               alt="additonal-veternary"
