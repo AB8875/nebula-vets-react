@@ -3,7 +3,7 @@ import { FbIcon, InstaIcon, LinkIcon } from "./Icon";
 export const navbarLink = [
   { link: "Services", path: "/services" },
   { link: "about us", path: "/about-nebula" },
-  { link: "location", path: "/services" },
+  { link: "location", path: "/dc-practice" },
   { link: " career", path: "/services" },
   { link: "patient portal", path: "/services" },
 ];
@@ -67,8 +67,8 @@ export const swiperData = [
     img: "/assests/png/additional-services.png",
     title: "Additional Services",
     subdata: [
-      { path: "/", link: "Surgeries" },
-      { path: "/", link: "Spay & Neuter" },
+      { path: "/surgery", link: "Surgeries" },
+      { path: "/spay", link: "Spay & Neuter" },
     ],
   },
 ];
@@ -818,5 +818,47 @@ export const imgData = [
     title2: "Sustainability & Environmental Responsibility",
     para2:
       "Recognizing the impact of the veterinary field on the environment, Nebula Vets is dedicated to promoting sustainability and environmental responsibility. We have implemented eco-friendly practices within our facility, reduced waste, and actively participate in initiatives that support a greener future for veterinary medicine.",
+  },
+];
+
+export const petSurgery = [
+  {
+    title: "Expert Surgical Team",
+  },
+  {
+    title: "Comprehensive Surgical Services",
+  },
+  {
+    title: "Cutting-Edge Facilities and Technology",
+  },
+  {
+    title: "Personalized Care",
+  },
+  {
+    title: "Optimal Safety and Comfort",
+  },
+  {
+    title: "Compassionate Post-Surgical Care",
+  },
+];
+
+export const spayAco = [
+  {
+    heading: "Experienced Surgical Team",
+  },
+  {
+    heading: "Health Benefits",
+  },
+  {
+    heading: "Surgical Expertise",
+  },
+  {
+    heading: "Personalized Care",
+  },
+  {
+    heading: "Compassionate Post-Surgical Care",
+  },
+  {
+    heading: "Overpopulation Control",
   },
 ];

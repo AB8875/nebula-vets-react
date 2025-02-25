@@ -17,6 +17,7 @@ function MainLeft({
   para2,
   btn,
   path,
+  paraclass1,
 }) {
   return (
     <>
@@ -34,7 +35,10 @@ function MainLeft({
         </div>
         <div className={`px-8 md:px-0 ${titleclass} `}>
           <SubHeading title={title} />
-          <Para para={para1} className={"roboto-mono max-w-[520px] mt-4"} />
+          <Para
+            para={para1}
+            className={`roboto-mono max-w-[520px] mt-4 ${paraclass1}`}
+          />
 
           <Para para={para2} className={"max-w-[480px] mt-8"} />
 

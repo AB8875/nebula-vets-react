@@ -1,18 +1,22 @@
+"use client";
 import React from "react";
-
 import { swiperData } from "../helper/Helper";
 import Image from "next/image";
 import SubHeading from "../common/SubHeading";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { EffectCards } from "swiper/modules";
+import "swiper/css/effect-cards";
 
-function Swiper() {
+function Swiperr() {
   return (
     <>
-      <div className="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 pb-[80px] md:pb-[140px]">
-        <div className="flex flex-wrap gap-5 justify-center   ">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-5 lg:px-10 xl:px-12 pb-[80px] md:pb-[140px] w-[400px]">
+        <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]}>
           {swiperData.map((item, index) => (
-            <div key={index} className="max-w-[310px] !w-full">
-              <div className="bg-[#494336]      h-[419px] p-5">
+            <SwiperSlide key={index}>
+              <div className="bg-[#494336] h-[419px]  p-5">
                 <div>
                   <Image
                     className="max-w-[90px]"
@@ -40,12 +44,12 @@ function Swiper() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </>
   );
 }
 
-export default Swiper;
+export default Swiperr;

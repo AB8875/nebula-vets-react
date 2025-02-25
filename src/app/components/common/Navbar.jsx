@@ -1,12 +1,22 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Buttons from "./Buttons";
 import { LogoIcon, ThreeLine } from "../helper/Icon";
 import { navbarLink } from "../helper/Helper";
-import Img from "./Img";
+import SideBar from "./SideBar";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+  const sidebarOpen = () => {
+    setOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  const sidebarClose = () => {
+    setOpen(false);
+    document.body.style.overflow = "";
+  };
   return (
     <>
       <nav className="bg-[#494336] fixed top-0 w-full !z-10">
@@ -18,7 +28,7 @@ function Navbar() {
               </Link>
             </div>
             <div className="block md:hidden">
-              <button id="menuBtn">
+              <button onClick={sidebarOpen}>
                 <ThreeLine />
               </button>
             </div>
@@ -39,6 +49,14 @@ function Navbar() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div
+          className={`fixed z-10 w-full   h-full bg-[#494336] transition-all duration-700  flex flex-col overflow-y-auto  ${
+            open ? "left-0 top-0" : "-left-full -top-full rounded-br-full"
+          } `}
+        >
+          <SideBar close={sidebarClose} />
         </div>
       </nav>
     </>

@@ -12,8 +12,9 @@ function AllCare() {
           <div
             key={index}
             id={item.id}
-            className="flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between  "
+            className={`flex flex-col md:flex-row items-start justify-between gap-0 md:gap-5 2xl:max-w-[2000px] 2xl:justify-between  `}
           >
+            {index}
             <MainLeft
               img={item.img}
               imgW={item.imgW}
@@ -25,15 +26,20 @@ function AllCare() {
               btn={item.btn}
               path={item.path}
             />
-            <div className="bg-[rgba(215,217,221,0.50)] py-[60px] md:py-[80px] ps-8 md:ps-[100px] pe-8 mt-[60px] md:mt-0">
+            <div
+              className={`bg-[rgba(215,217,221,0.50)] py-[60px] md:py-[80px] ps-8 md:ps-[100px] pe-8 mt-[60px] md:mt-0 `}
+            >
               {item.subdata.map((items, idx) => (
-                <SubPara
-                  key={idx}
-                  title={items.title}
-                  para={items.para}
-                  path={items.path}
-                  button={items.button}
-                />
+                <div key={idx}>
+                  {index} {idx}
+                  <SubPara
+                    paraclass={`${index == 1 ? (idx == 0 ? " " : "") : ""}`}
+                    title={items.title}
+                    para={items.para}
+                    path={items.path}
+                    button={items.button}
+                  />
+                </div>
               ))}
             </div>
           </div>
